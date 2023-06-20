@@ -1,0 +1,492 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="enabled">
+   <bool>true</bool>
+  </property>
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1920</width>
+    <height>1046</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>0</width>
+    <height>0</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>2200</width>
+    <height>1220</height>
+   </size>
+  </property>
+  <property name="mouseTracking">
+   <bool>true</bool>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(249, 249, 249);</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QPushButton" name="detectBtn">
+    <property name="enabled">
+     <bool>true</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>125</x>
+      <y>10</y>
+      <width>108</width>
+      <height>54</height>
+     </rect>
+    </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+      <horstretch>0</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
+    </property>
+    <property name="font">
+     <font>
+      <family>나눔스퀘어라운드 Bold</family>
+      <pointsize>12</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="mouseTracking">
+     <bool>true</bool>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+	color: rgb(123, 122, 122);
+	background-color: rgb(243, 243, 243);
+	border: 1.3px solid rgb(123, 122, 122);
+	border-radius: 12px;
+}
+
+QPushButton:hover{
+	color: rgb(86, 98, 112);
+	background-color: rgb(235, 236, 237);
+	border: 1.3px solid rgb(66, 77, 88);
+	border-radius: 12px;
+}
+
+QPushButton:pressed{
+	color: rgb(243, 243, 243);
+	background-color: rgb(86, 98, 112);
+	border: 1px solid rgb(243, 243, 243);
+	border-radius: 12px;
+}</string>
+    </property>
+    <property name="text">
+     <string>detect</string>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>70</width>
+      <height>70</height>
+     </size>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="openBtn">
+    <property name="enabled">
+     <bool>true</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>10</y>
+      <width>108</width>
+      <height>54</height>
+     </rect>
+    </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+      <horstretch>0</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
+    </property>
+    <property name="font">
+     <font>
+      <family>나눔스퀘어라운드 Bold</family>
+      <pointsize>12</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="autoFillBackground">
+     <bool>false</bool>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+	color: rgb(123, 122, 122);
+	background-color: rgb(243, 243, 243);
+	border: 1.3px solid rgb(123, 122, 122);
+	border-radius: 12px;
+}
+
+QPushButton:hover{
+	color: rgb(86, 98, 112);
+	background-color: rgb(235, 236, 237);
+	border: 1.3px solid rgb(66, 77, 88);
+	border-radius: 12px;
+}
+
+QPushButton:pressed{
+	color: rgb(243, 243, 243);
+	background-color: rgb(86, 98, 112);
+	border: 1.3px solid rgb(243, 243, 243);
+	border-radius: 12px;
+}</string>
+    </property>
+    <property name="text">
+     <string>open</string>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>70</width>
+      <height>70</height>
+     </size>
+    </property>
+    <property name="checkable">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="beforeLabel">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>190</y>
+      <width>945</width>
+      <height>738</height>
+     </rect>
+    </property>
+    <property name="autoFillBackground">
+     <bool>false</bool>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border: 1.4px solid rgb(131, 130, 130);
+border-style: dashed;
+border-radius: 9px;
+background-color: rgba(255, 255, 255, 0)</string>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::NoFrame</enum>
+    </property>
+    <property name="midLineWidth">
+     <number>0</number>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="afterLabel">
+    <property name="geometry">
+     <rect>
+      <x>965</x>
+      <y>190</y>
+      <width>945</width>
+      <height>738</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border: 1.4px solid rgb(131, 130, 130);
+border-style: dashed;
+border-radius: 9px;
+background-color: rgba(255, 255, 255, 0)</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="btextLabel">
+    <property name="geometry">
+     <rect>
+      <x>442</x>
+      <y>938</y>
+      <width>80</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>나눔스퀘어라운드 Regular</family>
+      <pointsize>10</pointsize>
+     </font>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(123, 122, 122);
+background-color: rgba(255, 255, 255, 0)</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="atextLabel">
+    <property name="geometry">
+     <rect>
+      <x>1397</x>
+      <y>938</y>
+      <width>80</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>나눔스퀘어라운드 Regular</family>
+      <pointsize>10</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(123, 122, 122);
+background-color: rgba(255, 255, 255, 0)</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="before">
+    <property name="geometry">
+     <rect>
+      <x>15</x>
+      <y>160</y>
+      <width>80</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>나눔스퀘어라운드 Bold</family>
+      <pointsize>12</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(123, 122, 122);
+background-color: rgba(255, 255, 255, 0)</string>
+    </property>
+    <property name="text">
+     <string>before</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="after">
+    <property name="geometry">
+     <rect>
+      <x>972</x>
+      <y>160</y>
+      <width>80</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>나눔스퀘어라운드 Bold</family>
+      <pointsize>12</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(123, 122, 122);
+background-color: rgba(255, 255, 255, 0)</string>
+    </property>
+    <property name="text">
+     <string>after</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
+    </property>
+   </widget>
+   <widget class="QRadioButton" name="bananaBtn">
+    <property name="geometry">
+     <rect>
+      <x>12</x>
+      <y>80</y>
+      <width>170</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>나눔스퀘어라운드 Regular</family>
+      <pointsize>11</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(123, 122, 122);
+background-color: rgba(255, 255, 255, 0)</string>
+    </property>
+    <property name="text">
+     <string>banana</string>
+    </property>
+    <property name="checkable">
+     <bool>true</bool>
+    </property>
+    <property name="checked">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QRadioButton" name="orangeBtn">
+    <property name="geometry">
+     <rect>
+      <x>12</x>
+      <y>115</y>
+      <width>170</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>나눔스퀘어라운드 Regular</family>
+      <pointsize>11</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(123, 122, 122);
+background-color: rgba(255, 255, 255, 0)</string>
+    </property>
+    <property name="text">
+     <string>orange</string>
+    </property>
+   </widget>
+   <widget class="QRadioButton" name="carrotBtn">
+    <property name="geometry">
+     <rect>
+      <x>182</x>
+      <y>80</y>
+      <width>170</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>나눔스퀘어라운드 Regular</family>
+      <pointsize>11</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(123, 122, 122);
+background-color: rgba(255, 255, 255, 0)</string>
+    </property>
+    <property name="text">
+     <string>carrot</string>
+    </property>
+   </widget>
+   <widget class="QRadioButton" name="pimentoBtn">
+    <property name="geometry">
+     <rect>
+      <x>182</x>
+      <y>115</y>
+      <width>170</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>나눔스퀘어라운드 Regular</family>
+      <pointsize>11</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(123, 122, 122);
+background-color: rgba(255, 255, 255, 0)</string>
+    </property>
+    <property name="text">
+     <string>pimento</string>
+    </property>
+   </widget>
+   <widget class="QRadioButton" name="onionBtn">
+    <property name="geometry">
+     <rect>
+      <x>352</x>
+      <y>80</y>
+      <width>170</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>나눔스퀘어라운드 Regular</family>
+      <pointsize>11</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(123, 122, 122);
+background-color: rgba(255, 255, 255, 0)</string>
+    </property>
+    <property name="text">
+     <string>onion</string>
+    </property>
+   </widget>
+   <widget class="QRadioButton" name="sweet_potatoBtn">
+    <property name="geometry">
+     <rect>
+      <x>352</x>
+      <y>115</y>
+      <width>170</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>나눔스퀘어라운드 Regular</family>
+      <pointsize>11</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(123, 122, 122);
+background-color: rgba(255, 255, 255, 0)</string>
+    </property>
+    <property name="text">
+     <string>sweet_potato</string>
+    </property>
+   </widget>
+   <zorder>openBtn</zorder>
+   <zorder>detectBtn</zorder>
+   <zorder>beforeLabel</zorder>
+   <zorder>afterLabel</zorder>
+   <zorder>btextLabel</zorder>
+   <zorder>atextLabel</zorder>
+   <zorder>before</zorder>
+   <zorder>after</zorder>
+   <zorder>bananaBtn</zorder>
+   <zorder>orangeBtn</zorder>
+   <zorder>carrotBtn</zorder>
+   <zorder>pimentoBtn</zorder>
+   <zorder>onionBtn</zorder>
+   <zorder>sweet_potatoBtn</zorder>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+ <slots>
+  <slot>fileOpenFunction()</slot>
+ </slots>
+</ui>
