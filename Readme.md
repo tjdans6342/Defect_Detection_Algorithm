@@ -1,19 +1,7 @@
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 # 프로젝트 소개
+
 ### 프로젝트 소개
+
 본 프로젝트는 농산물 x-ray 이미지에서 결함을 검출할 수 있도록 시각화하는 프로젝트이다.  
 
 
@@ -371,8 +359,20 @@ numba 라이브러리를 사용하면 처음 한 번의 컴파일 이후에는 �
 
 # 코드 구조 간략화
 
-![image](https://github.com/tjdans6342/Defect_Detection_Algorithm/assets/70836243/f60fdda9-b5f6-40c5-99df-7a7255757a2b)
 
-- defect_detection(img, th1, th2, th3)
+![image](https://github.com/tjdans6342/Defect_Detection_Algorithm/assets/70836243/1e88e588-3891-41ab-9011-70ff4ec57e13)
+
+
+`defect_detection(img, th1, th2, th3)`  
+- img를 넣으면 결함을 검출한 이미지를 반환하는 함수이다.  
+
+`cal_center(img)`  
+- img를 넣으면 해당 이미지에 있는 농산물의 중심 좌표를 (y, x) 형태로 반환한다.  
+
+`get_defect_candidates(img)`  
+- 이미지 결함 시각화 알고리즘을 적용한 img와 결함 픽셀을 정의하는 임계값 th4, th5이 입력으로 들어간다.  
+- 결함 후보에 대한 정보들을 담은 리스트를 반환한다.  
+- 결함 후보에 대한 정보는 `[y_min, x_min, y_max, x_max, num]` 형태이며 박스와 결함 픽셀 수를 담고 있다.  
+
 
 
