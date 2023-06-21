@@ -76,7 +76,7 @@ class WindowClass(QMainWindow, form_class):
             pseudo_img.append(defect_detection(simg, info, flag, radius, 16.0))
             end = time.time()
             print(f"{end - start:.5f} sec")
-            path.append('C:/Users/osoyo/.spyder-py3/capstone/'+str(i)+'.tif')
+            path.append('./'+str(i)+'.tif')
             cv.imwrite(path[i], cv.cvtColor(pseudo_img[i], cv.COLOR_RGB2BGR))
             
         # 이미지 설정
